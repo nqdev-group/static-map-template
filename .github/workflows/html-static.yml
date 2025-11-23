@@ -1,5 +1,5 @@
-name: Deploy Jekyll Documentation
-run-name: Deploy Jekyll Documentation - ${{ github.event_name }} event on ${{ github.ref_name }}
+name: Deploy Github Pages Documentation
+run-name: Deploy Github Pages Documentation - ${{ github.event_name }} event on ${{ github.ref_name }}
 
 on:
   workflow_dispatch: # Allow manual trigger
