@@ -51,7 +51,7 @@ jobs:
 
       - name: Build with Jekyll
         run: |
-          cd docs
+          # cd docs
           # Use base path if available, otherwise use repository name
           BASE_PATH="${{ steps.pages.outputs.base_path || '/containers' }}"
           bundle exec jekyll build --baseurl "$BASE_PATH"
