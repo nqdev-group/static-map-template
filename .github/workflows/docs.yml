@@ -41,7 +41,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
           cache-version: 0
-          working-directory: './docs'
+          working-directory: './'
 
       # Try to setup pages, but continue if it fails
       - name: Setup Pages
@@ -61,14 +61,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/_site
+          path: ./_site
 
       # Deployment job - only run when release event occurs
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site
+          publish_dir: ./_site
           publish_branch: gh-pages
           force_orphan: true
 
@@ -81,7 +81,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site
+          publish_dir: ./_site
           publish_branch: gh-pages
           force_orphan: true
 
@@ -94,7 +94,7 @@ jobs:
       #   uses: actions/download-artifact@v4
       #   with:
       #     name: jekyll-site
-      #     path: ./docs/_site
+      #     path: ./_site
 
       - name: Deploy to External Repository
         uses: peaceiris/actions-gh-pages@v3
@@ -104,7 +104,7 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: nqdev-storage/pages
           publish_branch: main
-          publish_dir: ./docs/_site
+          publish_dir: ./_site
           keep_files: false
           force_orphan: true
           user_name: 'nguyenquy0710'
