@@ -39,7 +39,8 @@ kramdown:
 
 # Include HTML files in the build
 include:
-  - "*.html"
+  - index.html
+  - gallery.html
 
 # Collections
 collections:
