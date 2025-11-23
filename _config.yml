@@ -37,6 +37,11 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# Include HTML files in the build
+include:
+  - index.html
+  - gallery.html
+
 # Collections
 collections:
   guides:
@@ -45,10 +50,8 @@ collections:
 
 # Navigation
 header_pages:
-  - index.md
-  - guides.md
-  - examples.md
-  - about.md
+  - index.html
+  - gallery.html
 
 # Exclude from processing
 exclude:
