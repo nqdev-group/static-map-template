@@ -1,0 +1,268 @@
+<%- include('partials/header', { title: 'Người bạn đồng hành tài chính thông minh' , additionalCSS: [] }) %>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>💰 FinTrack</h1>
+        <p class="tagline">Người bạn đồng hành tài chính thông minh</p>
+      </div>
+      <nav>
+        <a href="#features">Tính năng</a>
+        <a href="#api">API</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="/login">Đăng nhập</a>
+        <a href="/register">Đăng ký</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Quản lý tài chính cá nhân một cách thông minh</h2>
+        <p>Ghi chép thu chi, lập kế hoạch ngân sách, đặt mục tiêu tiết kiệm và nhiều hơn thế nữa</p>
+        <div class="cta-buttons">
+          <a href="/login" class="btn btn-primary">Đăng nhập</a>
+          <a href="https://github.com/nguyenquy0710/Financial-Tracking" class="btn btn-secondary" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Tính năng nổi bật</h2>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📝</div>
+              <h3>Ghi chép thu chi</h3>
+              <p>Nhập thủ công hoặc quét hóa đơn. Phân loại tự động theo danh mục.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">💵</div>
+              <h3>Quản lý lương</h3>
+              <p>Theo dõi lương công ty, freelance. Phân tích tăng trưởng thu nhập.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">🏠</div>
+              <h3>Quản lý thuê phòng</h3>
+              <p>Theo dõi tiền thuê, điện, nước, internet. Tính toán tự động tổng chi phí.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">💳</div>
+              <h3>Phương pháp 6 lọ</h3>
+              <p>Quản lý chi tiêu theo mô hình 6 lọ: NEC, FFA, EDUC, PLAY, GIVE, LTS.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">💰</div>
+              <h3>Tiết kiệm & Đầu tư</h3>
+              <p>Gửi tiết kiệm, sổ ngân hàng. Theo dõi kỳ hạn và lãi suất.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📋</div>
+              <h3>Hóa đơn định kỳ</h3>
+              <p>Quản lý các khoản thanh toán định kỳ. Nhắc nhở đến hạn tự động.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📊</div>
+              <h3>Phân tích & báo cáo</h3>
+              <p>Biểu đồ chi tiêu chi tiết. Cảnh báo khi vượt hạn mức.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">💸</div>
+              <h3>Ngân sách & Mục tiêu</h3>
+              <p>Đặt hạn mức chi tiêu. Lập kế hoạch tiết kiệm và theo dõi tiến độ.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📁</div>
+              <h3>Excel Import/Export</h3>
+              <p>Import dữ liệu từ Excel. Export toàn bộ dữ liệu ra file Excel.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">🏦</div>
+              <h3>Tài khoản ngân hàng</h3>
+              <p>Quản lý nhiều tài khoản. Theo dõi số dư và giao dịch.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">🤖</div>
+              <h3>AI hỗ trợ</h3>
+              <p>Gợi ý cắt giảm chi phí. Phân tích thói quen tiêu dùng.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">🔒</div>
+              <h3>Bảo mật</h3>
+              <p>Mã hóa dữ liệu. Hỗ trợ đa ngôn ngữ và đồng bộ đa thiết bị.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="api" class="api-section">
+      <div class="container">
+        <h2>API Documentation</h2>
+        <p>FinTrack cung cấp RESTful API đầy đủ để tích hợp vào ứng dụng của bạn</p>
+
+        <div class="api-examples">
+          <div class="api-example">
+            <h3>Authentication</h3>
+            <pre><code>POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/me</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Transactions</h3>
+            <pre><code>GET /api/transactions
+POST /api/transactions
+PUT /api/transactions/:id
+DELETE /api/transactions/:id
+GET /api/transactions/stats/summary</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Salary & Income</h3>
+            <pre><code>GET /api/salaries
+POST /api/salaries
+GET /api/salaries/stats/summary
+PUT /api/salaries/:id
+DELETE /api/salaries/:id</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Rental Management</h3>
+            <pre><code>GET /api/rentals
+POST /api/rentals
+GET /api/rentals/stats/summary
+PUT /api/rentals/:id
+DELETE /api/rentals/:id</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Expenses (6 Jars)</h3>
+            <pre><code>GET /api/expenses
+POST /api/expenses
+GET /api/expenses/stats/by-jar
+PUT /api/expenses/:id
+DELETE /api/expenses/:id</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Savings & Deposits</h3>
+            <pre><code>GET /api/savings
+POST /api/savings
+GET /api/deposits
+POST /api/deposits
+GET /api/deposits/upcoming</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Recurring Bills</h3>
+            <pre><code>GET /api/recurring-bills
+POST /api/recurring-bills
+GET /api/recurring-bills/upcoming
+PUT /api/recurring-bills/:id</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Bank Accounts</h3>
+            <pre><code>GET /api/bank-accounts
+POST /api/bank-accounts
+PUT /api/bank-accounts/:id
+DELETE /api/bank-accounts/:id</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Budgets & Goals</h3>
+            <pre><code>GET /api/budgets
+POST /api/budgets
+GET /api/budgets/alerts
+
+GET /api/goals
+POST /api/goals
+POST /api/goals/:id/contribute</code></pre>
+          </div>
+
+          <div class="api-example">
+            <h3>Excel Import/Export</h3>
+            <pre><code>POST /api/excel/import
+GET /api/excel/export
+POST /api/excel/import/rentals
+POST /api/excel/import/salaries</code></pre>
+          </div>
+        </div>
+
+        <div class="api-link">
+          <a href="/api-docs" class="btn btn-primary">Xem tài liệu API đầy đủ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <h2>API Status</h2>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-value" id="api-status">🟢 Online</div>
+              <div class="stat-label">API Status</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-value" id="uptime">--</div>
+              <div class="stat-label">Uptime</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-value">v1.0.0</div>
+              <div class="stat-label">Version</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Liên hệ</h2>
+        <p>Có câu hỏi hoặc muốn đóng góp? Chúng tôi rất vui được nghe từ bạn!</p>
+        <div class="contact-info">
+          <a href="https://github.com/nguyenquy0710/Financial-Tracking" class="btn btn-secondary" target="_blank">
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FinTrack. Made with ❤️ in Vietnam. Licensed under MIT.</p>
+      <p>Created by Nguyễn Hữu Quý</p>
+    </div>
+  </footer>
+
+  <%- include('partials/footer', { additionalJS: ['/js/main.js'] }) %>
