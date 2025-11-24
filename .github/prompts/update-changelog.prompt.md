@@ -1,5 +1,5 @@
 ---
-mode: edit
+agent: edit
 model: GPT-5
 description: Cập nhật file Changelog.md dựa trên lịch sử commit của repository và phân loại các thay đổi theo chuẩn Keep a Changelog.
 ---
