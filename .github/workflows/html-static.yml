@@ -4,10 +4,10 @@ run-name: Deploy Github Pages Documentation - ${{ github.event_name }} event on 
 on:
   workflow_dispatch: # Allow manual trigger
   repository_dispatch: # ✅ Cho phép kích hoạt từ bên ngoài (ví dụ: từ một workflow khác)
-  release:
-    # created : # ✅ Chỉ chạy khi release được tạo
-    # published: # ✅ Chỉ chạy khi release được phát hành
-    types: [published] # ✅ Chỉ chạy khi release được tạo
+  # release:
+  #   # created : # ✅ Chỉ chạy khi release được tạo
+  #   # published: # ✅ Chỉ chạy khi release được phát hành
+  #   types: [published] # ✅ Chỉ chạy khi release được tạo
 
 permissions: write-all
 # permissions:
@@ -18,7 +18,7 @@ permissions: write-all
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -32,10 +32,10 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
+          ruby-version: '3.1'
           bundler-cache: true
           cache-version: 0
-          working-directory: "./"
+          working-directory: './'
 
       # Try to setup pages, but continue if it fails
       - name: Setup Pages
