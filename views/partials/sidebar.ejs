@@ -1,0 +1,114 @@
+<!-- Mobile Menu Toggle Button -->
+<button class="btn btn-primary d-lg-none sidebar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+  aria-controls="sidebarMenu">
+  <i class="bi bi-list"></i>
+</button>
+
+<!-- Sidebar Navigation - Desktop -->
+<aside class="sidebar d-none d-lg-flex">
+  <div class="logo">
+    <h2>💰 FinTrack</h2>
+  </div>
+  <nav class="nav-menu">
+    <a href="/app/dashboard" class="nav-item <%= currentPage === 'dashboard' ? 'active' : '' %>">
+      <span class="icon">📊</span>
+      <span>Dashboard</span>
+    </a>
+    <a href="/app/rentals" class="nav-item <%= currentPage === 'rentals' ? 'active' : '' %>">
+      <span class="icon">🏠</span>
+      <span>Thuê phòng</span>
+    </a>
+    <a href="/app/salaries" class="nav-item <%= currentPage === 'salaries' ? 'active' : '' %>">
+      <span class="icon">💵</span>
+      <span>Lương</span>
+    </a>
+    <a href="/app/expenses" class="nav-item <%= currentPage === 'expenses' ? 'active' : '' %>">
+      <span class="icon">💳</span>
+      <span>Chi tiêu</span>
+    </a>
+    <a href="/app/savings" class="nav-item <%= currentPage === 'savings' ? 'active' : '' %>">
+      <span class="icon">🏦</span>
+      <span>Tiết kiệm</span>
+    </a>
+    <a href="/app/deposits" class="nav-item <%= currentPage === 'deposits' ? 'active' : '' %>">
+      <span class="icon">💎</span>
+      <span>Tiền gửi</span>
+    </a>
+    <a href="/app/money-keeper" class="nav-item <%= currentPage === 'money-keeper' ? 'active' : '' %>">
+      <span class="icon">💎</span>
+      <span>Money Keeper</span>
+    </a>
+    <a href="/app/recurring-bills" class="nav-item <%= currentPage === 'recurring-bills' ? 'active' : '' %>">
+      <span class="icon">🔄</span>
+      <span>Hóa đơn định kỳ</span>
+    </a>
+    <a href="/changelog" class="nav-item <%= currentPage === 'changelog' ? 'active' : '' %>">
+      <span class="icon">📋</span>
+      <span>Nhật ký phát triển</span>
+    </a>
+    <a href="/app/totp" class="nav-item <%= currentPage === 'totp' ? 'active' : '' %>">
+      <span class="icon">🔐</span>
+      <span>Xác thực 2FA</span>
+    </a>
+    <a href="/app/settings" class="nav-item <%= currentPage === 'settings' ? 'active' : '' %>">
+      <span class="icon">⚙️</span>
+      <span>Cài đặt</span>
+    </a>
+  </nav>
+</aside>
+
+<!-- Sidebar Navigation - Mobile (Offcanvas) -->
+<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebarMenuLabel">💰 FinTrack</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <nav class="nav-menu">
+      <a href="/app/dashboard" class="nav-item <%= currentPage === 'dashboard' ? 'active' : '' %>">
+        <span class="icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="/app/rentals" class="nav-item <%= currentPage === 'rentals' ? 'active' : '' %>">
+        <span class="icon">🏠</span>
+        <span>Thuê phòng</span>
+      </a>
+      <a href="/app/salaries" class="nav-item <%= currentPage === 'salaries' ? 'active' : '' %>">
+        <span class="icon">💵</span>
+        <span>Lương</span>
+      </a>
+      <a href="/app/expenses" class="nav-item <%= currentPage === 'expenses' ? 'active' : '' %>">
+        <span class="icon">💳</span>
+        <span>Chi tiêu</span>
+      </a>
+      <a href="/app/savings" class="nav-item <%= currentPage === 'savings' ? 'active' : '' %>">
+        <span class="icon">🏦</span>
+        <span>Tiết kiệm</span>
+      </a>
+      <a href="/app/deposits" class="nav-item <%= currentPage === 'deposits' ? 'active' : '' %>">
+        <span class="icon">💎</span>
+        <span>Tiền gửi</span>
+      </a>
+      <a href="/app/money-keeper" class="nav-item <%= currentPage === 'money-keeper' ? 'active' : '' %>">
+        <span class="icon">💎</span>
+        <span>Money Keeper</span>
+      </a>
+      <a href="/app/recurring-bills" class="nav-item <%= currentPage === 'recurring-bills' ? 'active' : '' %>">
+        <span class="icon">🔄</span>
+        <span>Hóa đơn định kỳ</span>
+      </a>
+      <a href="/changelog" class="nav-item <%= currentPage === 'changelog' ? 'active' : '' %>">
+        <span class="icon">📋</span>
+        <span>Nhật ký phát triển</span>
+      </a>
+      <a href="/app/totp" class="nav-item <%= currentPage === 'totp' ? 'active' : '' %>">
+        <span class="icon">🔐</span>
+        <span>Xác thực 2FA</span>
+      </a>
+      <a href="/app/settings" class="nav-item <%= currentPage === 'settings' ? 'active' : '' %>">
+        <span class="icon">⚙️</span>
+        <span>Cài đặt</span>
+      </a>
+    </nav>
+  </div>
+</div>
